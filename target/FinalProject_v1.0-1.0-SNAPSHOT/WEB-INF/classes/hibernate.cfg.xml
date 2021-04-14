@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<hibernate-configuration>
+<session-factory>
+   
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+     <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+     <!--  <property name="hibernate.connection.url">jdbc:sqlserver://localhost:50351;database=Scholarship1_0</property>
+         -->
+<property name="hibernate.connection.url">jdbc:sqlserver://localhost:50351;database=Test_ProdigyPillers1_0 </property>
+       <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">Sandysandy@2</property>
+ 
+      <!--
+      <property name="hibernate.connection.url">jdbc:sqlserver://boyce.coe.neu.edu:1433;database=testwebtools</property>
+        <property name="hibernate.connection.username">INFO6210</property>
+        <property name="hibernate.connection.password">NEUHusky!</property>
+         -->
+        <property name="hibernate.show_sql">true</property>
+
+        <mapping resource = "user.hbm.xml"></mapping>
+        <mapping class="com.mycompany.models.Student"/>
+        <mapping class="com.mycompany.models.StudentBG"/>
+        <mapping class="com.mycompany.models.StudentAchievements"/>
+        <mapping class="com.mycompany.models.AcademicRecord"/>
+        <mapping class="com.mycompany.models.StudentFeeStructure"/>
+      <mapping class="com.mycompany.models.Address"/>
+      <mapping class="com.mycompany.models.University"/>
+       <mapping class="com.mycompany.models.Program"/>
+        <mapping class="com.mycompany.models.Transactions"/>
+        <mapping class="com.mycompany.models.UniversityRepresntative"/>
+        <mapping class="com.mycompany.models.Donor"/>
+        
+<!--        <mapping resource = "student.hbm.xml"></mapping>
+        <mapping resource = "donor.hbm.xml"></mapping>
+        <mapping resource = "donor1.hbm.xml"></mapping>-->
+</session-factory>
+
+
+</hibernate-configuration>

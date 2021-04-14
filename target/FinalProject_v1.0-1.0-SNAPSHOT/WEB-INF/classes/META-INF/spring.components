@@ -1,0 +1,16 @@
+com.mycompany.controllers.SignUpController=org.springframework.stereotype.Component
+com.mycompany.controllers.StudentController=org.springframework.stereotype.Component
+com.mycompany.models.AcademicRecord=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.Address=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.Country=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.Person=javax.persistence.MappedSuperclass
+com.mycompany.models.Program=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.State=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.Student=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.StudentAchievements=javax.persistence.Entity
+com.mycompany.models.StudentBG=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.StudentFeeStructure=javax.persistence.Entity,javax.persistence.Table
+com.mycompany.models.University=javax.persistence.Entity,javax.persistence.Table,javax.persistence.NamedQuery
+com.mycompany.repositories.UniversityRepository=org.springframework.stereotype.Component
+com.mycompany.services.ProgramServiceImp=org.springframework.stereotype.Component
+com.mycompany.services.UniversityServiceImp=org.springframework.stereotype.Component

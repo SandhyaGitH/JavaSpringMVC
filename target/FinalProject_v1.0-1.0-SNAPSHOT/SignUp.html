@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SignUp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <section id="content">
+      <form action="SignUp.htm" method="post">
+      <h1>SignUp Here</h1>
+       <div class="select">
+            <select name="role" id="role">
+              <option selected disabled>SignUp As?</option>
+              <option value="Student">Student</option>
+              <option value="Donor">Donor</option>
+              
+            </select>
+        </div>
+      <br/>
+      <div>
+        <input type="text" placeholder="Email Address" required="" id="username" name="email" />
+      </div>
+      <div>
+        <input type="password" placeholder="Password" required="" id="password" name="password" />
+      </div>
+       <div>
+        <input type="password" placeholder="ConfirmPassword" required="" id="password" name="Cpassword" />
+      </div>
+      <div>
+        <input type="submit" value="SignUp" />
+        <a href="index.html">Login</a>
+      </div>
+    </form><!-- form -->
+    
+  </section><!-- content -->
+</div><!-- container -->
+</body>
+</html>
+
